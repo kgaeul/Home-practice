@@ -1,23 +1,23 @@
-package com.kh.practice6;
+package homework;
+
+import java.util.Scanner;
 
 public class practice2 {
 
-	public static void main(String[] args) {
-
-		int [][] num = {{1,2,3,4},
-				{5,6,7,8},
-				{9,10,11,12},
-				{13,14,15,16}};
+	
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
 		
-		for(int i=0;i<num.length;i++) {
-			for(int i2=0;i2<num[i].length;i2++) {
-					System.out.print(num[i][i2]);
-					System.out.print(" ");
-					
-			}
-			System.out.println();
+		public void num(int n) {
+			this.n=n;
 		}
+		
+		public void result() {
+		int factorial = 1;
+        for (int i = 1; i <= n; i++) {
+            factorial *= i;
+            System.out.print(factorial+" ");
+        }
 	}
+
 }
-
-

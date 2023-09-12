@@ -1,31 +1,30 @@
-package com.kh.practice6;
+package homework;
 
 import java.util.Scanner;
 
 public class practice5 {
 
-	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+        int Size = sc.nextInt();
+        int[] number = new int[Size];
+        
+        public void num(int size) {
+        this.Size=size;
+        }
+        
+        public void result() {
+    	for (int i = 0; i < Size; i++) {
+            number[i] = sc.nextInt();
+        }
+        int max = number[0];
+        for (int i = 1; i < Size; i++) {
+            if (number[i] > max) {
+                max = number[i];
+                System.out.println(max);
+            
+            }
+        }
+	
+	}
 
-		Scanner sc =new Scanner(System.in);
-		System.out.print("행을 입력해주세요 : ");
-		int n =sc.nextInt();
-		
-		System.out.print("열을 입력해주세요 : ");
-		int n2 =sc.nextInt();
-		
-		String [][] abc = {{"T","P","M","B"},
-				{"U","I","H","S"}, 
-				{"Q","M","B","H"}, 
-				{"H","B","I","X"}, 
-				{"G","F","X","I"}}; 
-
-			if(n<1) {
-				System.out.println("반드시 1~10 사이의 정수를 입력해야 합니다.");
-			}else if(n>10) {
-				System.out.println("반드시 1~10 사이의 정수를 입력해야 합니다.");
-			}else {
-			System.out.println("("+n+","+n2+")="+abc[n][n2]);
-			}
-		}
-	}	
-
+}
